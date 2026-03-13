@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Leandro Briceño | Desarrollador Backend Freelance Python</title>
+    <meta name="description" content="Desarrollador backend freelance especializado en Python, Flask y bases de datos. Desarrollo APIs, sistemas web y soluciones para negocios.">
+    <meta name="keywords" content="desarrollador freelance python, backend freelance, flask developer, programador argentino, crear sistemas web, mysql">
+    <meta name="author" content="Leandro Briceño">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Leandro Briceño | Desarrollador Backend Freelance">
+    <meta property="og:description" content="Desarrollo sistemas web, APIs y bases de datos para negocios.">
+    <meta property="og:image" content="{{ url_for('static', filename='fotoporta1.JPG') }}">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">Leandro <span>Briceño</span></h1>
+        <nav>
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#skills">Herramientas</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="sobremi" class="hero">
+    <div class="hero-container">
+
+        <div class="hero-img">
+            <img src="{{ url_for('static', filename='fotoporta1.JPG') }}" alt="Leandro Briceño">
+        </div>
+
+        <div class="hero-text">
+
+            <p class="saludo">Desarrollo soluciones web y backend para negocios</p>
+
+            <h1>Leandro <span>Briceño</span></h1>
+            <h2>Desarrollador Backend Freelance Python</h2>
+
+            <p class="intro">
+                Me especializo en la creación de sistemas web, APIs y bases de datos.
+                Trabajo con Python y Flask desarrollando soluciones para emprendedores,
+                negocios y proyectos digitales que necesitan una base sólida y organizada.
+            </p>
+
+            <p class="intro">
+                Construyo plataformas funcionales, estructuras de datos eficientes y
+                sistemas pensados para crecer. Busco colaborar en proyectos freelance
+                donde pueda aportar soluciones reales.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+
+    <div class="servicios-box">
+
+        <div class="servicio">
+            <i class="fa-solid fa-server"></i>
+            <h3>Desarrollo Backend</h3>
+            <p>APIs y lógica de negocio con Python y Flask.</p>
+        </div>
+
+        <div class="servicio">
+            <i class="fa-solid fa-database"></i>
+            <h3>Bases de datos</h3>
+            <p>Diseño de bases MySQL optimizadas.</p>
+        </div>
+
+        <div class="servicio">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Sistemas web</h3>
+            <p>Plataformas para negocios y emprendedores.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS/Herramientas -->
+<section id="skills" class="skills">
+    <h2>Herramientas</h2>
+
+    <div class="skills-box">
+
+        <div class="skill"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="skill"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+        <div class="skill"><i class="fa-solid fa-server"></i><span>Flask</span></div>
+        <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+        <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="skill"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+        <div class="skill"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="skill"><i class="fa-solid fa-paper-plane"></i><span>Postman</span></div>
+        <div class="skill"><i class="fa-solid fa-code"></i><span>Jinja</span></div>
+
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="proyectos">
+    <h2>Proyectos</h2>
+    <p>Ejemplos de sistemas que puedo desarrollar</p>
+
+    <div class="proyectos-box">
+
+        <div class="proyecto-card">
+            <img src="{{ url_for('static', filename='impulsar.jpeg') }}" alt="Impulsar">
+
+            <h3>IMPULSAR</h3>
+
+            <p>
+            Plataforma para emprendedores y empresas que buscan aumentar la
+            visibilidad de sus negocios y gestionar información desde un sistema web.
+            </p>
+
+            <p>
+            Proyecto enfocado en desarrollo backend, APIs, base de datos y estructura
+            de sistemas reales. Este tipo de plataforma puede adaptarse a distintos
+            negocios que necesiten digitalizar su servicio.
+            </p>
+
+            <div class="proyecto-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Jinja</span>
+            </div>
+
+            <a href="https://github.com/Franv-Dev/IMPULSAR" target="_blank">Ver código</a>
+        </div>
+
+        <div class="proyecto-card">
+            <img src="{{ url_for('static', filename='franco-invader.png') }}" alt="Impulsar">
+
+            <h3>FRANCO-INVADER</h3>
+
+            <p>
+            videojuego de estilo arcade retro donde el jugador controla una nave espacial 
+            con el objetivo de defender la galaxia de oleadas de alienígenas.
+            El juego implementa mecánicas fundamentales de desarrollo de videojuegos, 
+            como gestión de estados,detección de colisiones y renderizado dinámico.
+            </p>
+
+
+            <div class="proyecto-tech">
+                <span>Python</span>
+                <span>Pygames</span>
+                <span>POO</span>
+                <span>Vector Math</span>
+            </div>   
+            <a href="https://github.com/Hutchy147/franco_invader" target="_blank">Ver código</a>
+        </div>
+
+        <div class="proyecto-card">
+            <img src="{{ url_for('static', filename='vinificacion.png') }}" alt="Impulsar">
+
+            <h3>Vinificacion API</h3>
+
+            <p>
+            Plataforma de trazabilidad y control de producción desde la recepción de materia prima hasta la exportación.
+            Es una solución digital diseñada para bodegas que necesitan un control riguroso de su cadena de suministro.
+            El sistema gestiona todo el ciclo de vida del vino, asegurando la calidad 
+            y la trazabilidad en cada etapa del proceso productivo y logístico.
+            </p>
+
+
+            <div class="proyecto-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+            </div>
+            <a href="https://github.com/Toomasmg/vinificacion_api" target="_blank">Ver código</a>
+        </div>
+
+        <div class="proyecto-card">
+            <img src="{{ url_for('static', filename='sistemaTurnos.jpeg') }}" alt="Impulsar">
+
+            <h3>Sistema de Turnos</h3>
+
+            <p>
+            El sistema de turnos es una aplicación web
+            que permite gestionar reservas de manera digital, organizada y automática.
+            Está pensado para negocios que necesitan administrar clientes y horarios sin usar agenda en papel.
+            </p>
+
+
+            <div class="proyecto-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <a href="https://github.com/Leanbrice/Sisterma-de-Turnos-API" target="_blank">Ver código</a>
+        </div>
+        
+        <div class="proyecto-card">
+            <img src="{{ url_for('static', filename='guidia.jpeg') }}" alt="Impulsar">
+
+            <h3>Hackathon Guidia</h3>
+
+            <p>
+            Desarrollo de una aplicación web de gestión de turnos
+            diseñada para optimizar la organización de citas y mejorar la experiencia tanto de clientes como de administradores. 
+            La plataforma permite a los usuarios reservar, modificar y cancelar turnos de forma rápida y sencilla,
+            mientras que los administradores pueden gestionar horarios, servicios y disponibilidad en tiempo real. 
+            El sistema reduce la gestión manual, evita conflictos de horarios y mejora la eficiencia operativa del negocio mediante una solución digital moderna,
+            accesible y fácil de usar.
+            </p>
+
+
+            <div class="proyecto-tech">
+                <span>Python</span>
+                <span>Dash(Plotly)</span>
+                <span>fpdf2</span>
+                <span>dcc.Store (Session Storage)</span>
+                <span>HTML</span>
+                <span>Google Gemini Pro API</span>
+                <span>Render</span>
+                <span>Gunicorn</span>
+            </div>
+            <a href="https://github.com/Nahuelito22/Guidia" target="_blank">Ver código</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Podés escribirme para consultas o presupuestos</p>
+
+    <div class="contacto-links">
+
+        <a class="contacto-btn" href="mailto:leagustin9@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Gmail
+        </a>
+
+        <a class="contacto-btn" href="https://github.com/Leanbrice" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <a class="contacto-btn" href="https://linkedin.com/in/leandro-briceño-9998a9370/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a class="contacto-btn" href="https://wa.me/5492613898893" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<!--FOOTER -->
+<footer class="footer">
+    <p class="firma">Leandro Briceño · Backend Freelance</p>
+</footer>
+
+</body>
+</html>

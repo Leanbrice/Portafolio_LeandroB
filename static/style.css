@@ -1,0 +1,381 @@
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:#e6e6e6;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#111;
+    padding:20px 0;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #2d1b12;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+    color:#e6d3b3;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#8b5a2b;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#e6e6e6;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#8b5a2b;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 20px 60px;
+    background:#0d0b09;
+}
+
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    max-width:1100px;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.hero-img img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid #5a3a1b;
+    box-shadow:0 0 30px rgba(90,58,27,0.5);
+    transition:0.4s;
+}
+
+.hero-img img:hover{
+    transform:scale(1.05);
+}
+
+.hero-text{
+    max-width:520px;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:10px;
+    color:#e6d3b3;
+}
+
+.hero-text h1 span{
+    color:#8b5a2b;
+}
+
+.hero-text h2{
+    font-size:34px;
+    margin-bottom:25px;
+    color:#e6d3b3;
+}
+
+.hero-text p{
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+
+/* ================= TITULOS SECCIONES ================= */
+
+.skills h2,
+.proyectos h2,
+.contacto h2,
+.servicios h2{
+    font-size:38px;
+    color:#e6d3b3;
+    margin-bottom:60px;
+    display:inline-block;
+    position:relative;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.skills h2::after,
+.proyectos h2::after,
+.contacto h2::after,
+.servicios h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#8b5a2b;
+    display:block;
+    margin:12px auto 0;
+    border-radius:4px;
+}
+
+/* ================= SERVICIOS ================= */
+
+.servicios{
+    text-align:center;
+    padding:100px 0;
+}
+
+.servicios-box{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.servicio{
+    background:#141210;
+    padding:30px;
+    border-radius:14px;
+    border:1px solid #2a2118;
+    max-width:340px;
+    transition:0.3s;
+}
+
+.servicio:hover{
+    transform:translateY(-6px);
+    border-color:#8b5a2b;
+}
+
+/* ================= SKILLS/Herramientas ================= */
+
+.skills{
+    text-align:center;
+    padding:100px 0;
+}
+
+.skills-box{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.skill{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:#1a1a1a;
+    padding:16px 26px;
+    margin:12px;
+    border-radius:10px;
+    border:1px solid #8b5a2b;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#8b5a2b;
+    color:black;
+}
+
+/* ================= PROYECTOS ================= */
+
+.proyectos{
+    text-align:center;
+    padding:100px 0;
+}
+
+.proyectos p{
+    color:#aaa;
+    margin-bottom:40px;
+}
+
+.proyectos-box{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:50px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.proyecto-card{
+    background:#141210;
+    padding:30px;
+    border-radius:16px;
+    border:1px solid #2a2118;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.proyecto-card:hover{
+    transform:translateY(-8px);
+    border-color:#8b5a2b;
+}
+
+.proyecto-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.proyecto-card h3{
+    font-size:26px;
+    color:#e6d3b3;
+    margin-bottom:15px;
+}
+
+.proyecto-card p{
+    color:#cfcfcf;
+    line-height:1.6;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.proyecto-tech span{
+    display:inline-block;
+    padding:6px 12px;
+    margin:5px;
+    font-size:12px;
+    border-radius:4px;
+    background:#111;
+    color:#c7a27a;
+    border:1px solid #5a3a1b;
+}
+
+.proyecto-card a{
+    margin-top:20px;
+    align-self:center;
+    text-decoration:none;
+    background:#8b5a2b;
+    color:black;
+    padding:10px 20px;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.proyecto-card a:hover{
+    background:#a4713a;
+}
+
+/* ================= CONTACTO ================= */
+
+.contacto{
+    text-align:center;
+    padding:120px 20px;
+    background:#0f0f0f;
+}
+
+.contacto h2{
+    font-size:38px;
+    color:#e6d3b3;
+    margin-bottom:30px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.contacto h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#8b5a2b;
+    display:block;
+    margin:12px auto 0;
+    border-radius:4px;
+}
+
+.contacto p{
+    max-width:600px;
+    margin:0 auto 50px auto;
+    line-height:1.7;
+    font-size:17px;
+    color:#cfcfcf;
+}
+
+.contacto-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+/* BOTONES */
+.contacto-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 24px;
+    background:#141210;
+    border:1px solid #5a3a1b;
+    border-radius:10px;
+    text-decoration:none;
+    color:#e6d3b3;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.contacto-btn:hover{
+    background:#8b5a2b;
+    color:white;
+    transform:translateY(-4px);
+}
+/* ================= FOOTER ================= */
+
+.footer{
+    padding:30px 0;
+    text-align:center;
+    background:#0d0b09;
+    border-top:1px solid #1f1913;
+}
+
+.firma{
+    font-size:12px;
+    color:#8b6a4a;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    .proyectos-box{
+        grid-template-columns:1fr;
+    }
+
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+}

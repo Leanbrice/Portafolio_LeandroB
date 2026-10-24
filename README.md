@@ -1,6 +1,6 @@
 # Portafolio · Leandro Briceño
 
-Sitio personal de **Leandro Agustín Briceño**, desarrollador backend con Python, Flask y MySQL.
+Sitio personal de **Leandro Agustín Briceño**, estudiante de Desarrollo de Software (último año) con foco en backend con Python, Flask y MySQL.
 Reúne mis servicios, herramientas, proyectos y una página con mi currículum.
 
 ## Qué incluye

@@ -20,9 +20,9 @@ Reúne mis servicios, herramientas, proyectos y una página con mi currículum.
 
 ## Tecnologías
 
-- **Backend:** Python, Flask, Jinja2
-- **Frontend:** HTML, CSS, JavaScript
-- **Control de versiones:** Git y GitHub
+- **Backend:** Python, Flask, SQLAlchemy, NestJS, JWT, Jinja2
+- **Frontend:** HTML, CSS, JavaScript, TypeScript, React, Vite
+- **Base de datos y otras:** MySQL, Docker, Git y GitHub
 
 ## Estructura
 

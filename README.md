@@ -1,13 +1,11 @@
 # Portafolio · Leandro Briceño
 
 Sitio personal de **Leandro Agustín Briceño**, estudiante de Desarrollo de Software (último año) con foco en backend con Python, Flask y MySQL.
-Reúne mis servicios, herramientas, proyectos y una página con mi currículum.
+Reúne mis servicios, herramientas, proyectos y contacto. Funciona como mi currículum online.
 
 ## Qué incluye
 
 - **Portafolio** (`/`): presentación, servicios, herramientas, proyectos y contacto.
-- **Currículum** (`/cv`): CV de una hoja A4 con estudios, capacitaciones, proyectos con sus lenguajes y habilidades.
-  Para guardarlo en PDF: abrir `/cv`, imprimir (Ctrl+P) y elegir *Guardar como PDF*.
 
 ## Proyectos destacados
 
@@ -28,14 +26,12 @@ Reúne mis servicios, herramientas, proyectos y una página con mi currículum.
 
 ```text
 .
-├── app.py              # Aplicación Flask y rutas (/ y /cv)
+├── app.py              # Aplicación Flask
 ├── requirements.txt    # Dependencias
 ├── templates/
-│   ├── index.html      # Portafolio
-│   └── cv.html         # Currículum
+│   └── index.html      # Portafolio
 └── static/
     ├── style.css       # Estilos del portafolio
-    ├── cv.css          # Estilos del CV (formato A4 e impresión)
     └── *.png / *.jpeg  # Imágenes y logos
 ```
 
@@ -52,7 +48,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Después abrir <http://127.0.0.1:5000> para el portafolio y <http://127.0.0.1:5000/cv> para el CV.
+Después abrir <http://127.0.0.1:5000>.
 
 ## Contacto
 

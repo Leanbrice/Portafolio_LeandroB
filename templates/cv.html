@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum Vitae | Leandro Agustín Briceño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600;700&family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cv.css') }}">
+</head>
+<body>
+
+<main class="cv">
+
+  <!-- ============ BARRA LATERAL ============ -->
+  <aside class="lateral">
+
+    <div class="foto">
+      <img src="{{ url_for('static', filename='fotoporta1.JPG') }}" alt="Leandro Agustín Briceño">
+    </div>
+
+    <p class="perfil">
+      Soy un estudiante de una carrera terciaria, en búsqueda de empleo para
+      sustentar mis gastos y además conseguir experiencia laboral para conseguir
+      un mejor puesto a futuro.
+    </p>
+
+    <!-- Versión pública: sin DNI, CUIL, domicilio ni edad. Para postular, mandá el PDF con esos datos si te los piden. -->
+    <section class="bloque">
+      <h3>Datos Personales</h3>
+      <ul class="datos">
+        <li><b>Nacionalidad:</b> Argentino</li>
+        <li><b>Estado civil:</b> Soltero</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h3>Contacto</h3>
+      <ul class="datos">
+        <li><a href="mailto:leagustin9@gmail.com">leagustin9@gmail.com</a></li>
+        <li><a href="tel:+542613898893">261 389-8893</a></li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h3>Manejo de Herramientas</h3>
+      <ul class="datos">
+        <li>Word (Intermedio)</li>
+        <li>PowerPoint (Intermedio)</li>
+        <li>Excel (Básico)</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h3>Lenguajes y Tecnologías</h3>
+      <ul class="datos">
+        <li><b>Lenguajes:</b> Python, JavaScript, TypeScript, SQL, HTML, CSS</li>
+        <li><b>Backend:</b> Flask, SQLAlchemy, NestJS, API REST con JWT</li>
+        <li><b>Frontend:</b> React, Vite</li>
+        <li><b>Base de datos:</b> MySQL</li>
+        <li><b>Otras:</b> Git, GitHub, Docker</li>
+      </ul>
+    </section>
+
+  </aside>
+
+  <!-- ============ COLUMNA PRINCIPAL ============ -->
+  <section class="principal">
+
+    <div class="flechas" aria-hidden="true">› › › › › › › › › › › › › ›</div>
+
+    <h1 class="nombre">Leandro Agustín Briceño</h1>
+
+    <section class="seccion">
+      <h2>Estudios Realizados</h2>
+      <div class="item">
+        <span class="anios">2018-2022</span>
+        <div class="detalle">
+          <strong>Nivel secundario (completado)</strong>
+          <span>Colegio 4-069 Alfonsina Storni</span>
+        </div>
+      </div>
+      <div class="item">
+        <span class="anios">2023-2024</span>
+        <div class="detalle">
+          <strong>Nivel superior (cursando)</strong>
+          <span>CESIT IES 9-023 Instituto Educación Superior</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2>Capacitaciones</h2>
+      <div class="capacitacion">
+        <strong>Tecnología educativa (finalizado)</strong>
+        <span>Elearning – Total online</span>
+      </div>
+      <div class="capacitacion">
+        <strong>TOL: Taller de Orientación Laboral (finalizado)</strong>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2>Proyectos</h2>
+
+      <div class="proyecto">
+        <div class="logo-proy"><img src="{{ url_for('static', filename='logo-impulsar.png') }}" alt="Logo Impulsar"></div>
+        <div class="detalle">
+          <strong>IMPULSAR</strong>
+          <span>Plataforma web para crear, administrar y difundir emprendimientos locales.</span>
+          <div class="langs"><i>Python</i><i>JavaScript</i><i>TypeScript</i><i>HTML</i><i>CSS</i><i>MySQL</i></div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <!-- Reemplazá por el logo real: <img src="{{ url_for('static', filename='logo-asisto.png') }}" alt="Logo AsisTO"> -->
+        <div class="logo-proy monograma">AT</div>
+        <div class="detalle">
+          <strong>AsisTO</strong>
+          <span>Sistema de asistencias y seguimiento terapéutico para terapia ocupacional.</span>
+          <div class="langs"><i>Python</i><i>JavaScript</i><i>SQL</i><i>MySQL</i></div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <!-- Reemplazá por el logo real: <img src="{{ url_for('static', filename='logo-farmacia.png') }}" alt="Logo farmacia"> -->
+        <div class="logo-proy monograma">Rx</div>
+        <div class="detalle">
+          <strong>Sistema de gestión para farmacia</strong>
+          <span>Trabajo práctico de Programación III con backend y frontend separados.</span>
+          <div class="langs"><i>TypeScript</i><i>CSS</i><i>MySQL</i><i>Docker</i></div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <!-- Reemplazá por el logo real: <img src="{{ url_for('static', filename='logo-mundial.png') }}" alt="Logo Mundial de Árbitros"> -->
+        <div class="logo-proy monograma">MA</div>
+        <div class="detalle">
+          <strong>API Mundial de Árbitros 2026</strong>
+          <span>API REST con autenticación JWT y POO. Me encargué del CRUD de árbitros, rutas y validaciones.</span>
+          <div class="langs"><i>Python</i><i>JavaScript</i><i>MySQL</i><i>CSS</i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2>Habilidades</h2>
+      <ul class="habilidades">
+        <li>Puntualidad y responsabilidad en mis tareas.</li>
+        <li>Eficaz comunicación para el trabajo en equipo.</li>
+        <li>Facilidad para adquirir conocimientos.</li>
+        <li>Buena predisposición para atención al público.</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Disponibilidad horaria</h2>
+      <ul class="habilidades">
+        <li>Full-time</li>
+      </ul>
+    </section>
+
+    <div class="flechas abajo" aria-hidden="true">› › › › › › › › › › › › › ›</div>
+
+  </section>
+
+</main>
+
+</body>
+</html>
